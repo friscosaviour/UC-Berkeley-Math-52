@@ -1,0 +1,131 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{fullpage}
+
+\title{\Huge\textbf{Calculus Cheatsheet}}
+\author{\large Majid Rebouh}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{\Large Differentiation Rules}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+    \hline
+    \textbf{Rule} & \textbf{Formula} \\
+    \hline
+    Power Rule & $\frac{d}{dx}x^n = nx^{n-1}$ \\
+    Constant Multiple Rule & $\frac{d}{dx}[cf(x)] = c\frac{d}{dx}f(x)$ \\
+    Sum/Difference Rule & $\frac{d}{dx}[f(x) \pm g(x)] = \frac{d}{dx}f(x) \pm \frac{d}{dx}g(x)$ \\
+    Product Rule & $\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x)$ \\
+    Quotient Rule & $\frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{g(x)f'(x) - f(x)g'(x)}{[g(x)]^2}$ \\
+    Chain Rule & $\frac{d}{dx}f(g(x)) = f'(g(x))g'(x)$ \\
+    Logarithm & $\frac{d}{dx}\ln x = \frac{1}{x}$ \\
+    Exponential & $\frac{d}{dx}e^x = e^x$ \\
+    \hline
+\end{tabular}
+\end{center}
+
+\vspace{2em}
+
+\subsection*{\large Trigonometric Differentiations}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+    \hline
+    \textbf{Function} & \textbf{Derivative} \\
+    \hline
+    $\sin x$ & $\frac{d}{dx}\sin x = \cos x$ \\
+    $\cos x$ & $\frac{d}{dx}\cos x = -\sin x$ \\
+    $\tan x$ & $\frac{d}{dx}\tan x = \sec^2 x$ \\
+    $\csc x$ & $\frac{d}{dx}\csc x = -\csc x \cot x$ \\
+    $\sec x$ & $\frac{d}{dx}\sec x = \sec x \tan x$ \\
+    $\cot x$ & $\frac{d}{dx}\cot x = -\csc^2 x$ \\
+    \hline
+\end{tabular}
+\end{center}
+
+\vspace{2em}
+
+\subsection*{\large Inverse Trigonometric Differentiations}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+    \hline
+    \textbf{Function} & \textbf{Derivative} \\
+    \hline
+    $\arcsin x$ & $\frac{d}{dx}\arcsin x = \frac{1}{\sqrt{1-x^2}}$ \\
+    $\arccos x$ & $\frac{d}{dx}\arccos x = -\frac{1}{\sqrt{1-x^2}}$ \\
+    $\arctan x$ & $\frac{d}{dx}\arctan x = \frac{1}{1+x^2}$ \\
+    $\text{arccot } x$ & $\frac{d}{dx}\text{arccot } x = -\frac{1}{1+x^2}$ \\
+    $\text{arcsec } x$ & $\frac{d}{dx}\text{arcsec } x = \frac{1}{|x|\sqrt{x^2-1}}$ \\
+    $\text{arccsc } x$ & $\frac{d}{dx}\text{arccsc } x = -\frac{1}{|x|\sqrt{x^2-1}}$ \\
+    \hline
+\end{tabular}
+\end{center}
+
+\newpage
+
+\section*{\Large Integration Rules}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+    \hline
+    \textbf{Rule} & \textbf{Formula} \\
+    \hline
+    Power Rule & $\int x^n dx = \frac{x^{n+1}}{n+1} + C, \text{ for } n \neq -1$ \\
+    Logarithm & $\int \frac{1}{x} dx = \ln|x| + C$ \\
+    Constant Multiple Rule & $\int cf(x) dx = c \int f(x) dx$ \\
+    Sum/Difference Rule & $\int [f(x) \pm g(x)] dx = \int f(x) dx \pm \int g(x) dx$ \\
+    Integration by Parts & $\int u dv = uv - \int v du$ \\
+    Exponential & $\int e^x dx = e^x + C$ \\
+    \hline
+\end{tabular}
+\end{center}
+
+\vspace{2em}
+
+\subsection*{\large Trigonometric Integrations}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+    \hline
+    \textbf{Function} & \textbf{Integral} \\
+    \hline
+    $\sin x$ & $\int \sin x dx = -\cos x + C$ \\
+    $\cos x$ & $\int \cos x dx = \sin x + C$ \\
+    $\sec^2 x$ & $\int \sec^2 x dx = \tan x + C$ \\
+    $\csc^2 x$ & $\int \csc^2 x dx = -\cot x + C$ \\
+    $\sec x \tan x$ & $\int \sec x \tan x dx = \sec x + C$ \\
+    $\csc x \cot x$ & $\int \csc x \cot x dx = -\csc x + C$ \\
+    $\tan x$ & $\int \tan x dx = -\ln|\cos x| + C = \ln|\sec x| + C$ \\
+    $\cot x$ & $\int \cot x dx = \ln|\sin x| + C$ \\
+    $\sec x$ & $\int \sec x dx = \ln|\sec x + \tan x| + C$ \\
+    $\csc x$ & $\int \csc x dx = -\ln|\csc x + \cot x| + C$ \\
+    \hline
+\end{tabular}
+\end{center}
+
+\vspace{2em}
+
+\subsection*{\large Integrals Resulting in Inverse Trigonometric Functions}
+
+\begin{center}
+\begin{tabular}{|l|l|}
+    \hlineœ
+    \textbf{Integral} & \textbf{Result} \\
+    \hline
+    $\int \frac{dx}{\sqrt{a^2-x^2}}$ & $\arcsin\left(\frac{x}{a}\right) + C$ \\
+    $\int \frac{dx}{a^2+x^2}$ & $\frac{1}{a}\arctan\left(\frac{x}{a}\right) + C$ \\
+    $\int \frac{dx}{x\sqrt{x^2-a^2}}$ & $\frac{1}{a}\text{arcsec}\left(\frac{|x|}{a}\right) + C$ \\
+    \hline
+\end{tabular}
+\end{center}
+
+\end{document}
